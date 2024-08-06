@@ -1,0 +1,118 @@
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --button-background-color: #007bff;
+  --button-hover-color: #0056b3;
+  --input-background-color: #fff;
+  --input-border-color: #ced4da;
+  --input-text-color: #495057;
+  --list-background-color: #eef;
+  --list-border-color: #ddd;
+}
+
+body.light {
+  --background-color: #fff;
+  --text-color: #000;
+  --button-background-color: #007bff;
+  --button-hover-color: #0056b3;
+  --input-background-color: #fff;
+  --input-border-color: #ced4da;
+  --input-text-color: #495057;
+  --list-background-color: #eef;
+  --list-border-color: #ddd;
+}
+
+body.dark {
+  --background-color: #2c2c2c;
+  --text-color: #f0f0f0;
+  --button-background-color: #1e90ff;
+  --button-hover-color: #1c86ee;
+  --input-background-color: #444;
+  --input-border-color: #555;
+  --input-text-color: #ddd;
+  --list-background-color: #555;
+  --list-border-color: #666;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: var(--button-background-color);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+input[type="text"], input[type="date"] {
+  padding: 10px;
+  margin: 10px 5px;
+  font-size: 16px;
+  width: calc(100% - 50px);
+  background-color: var(--input-background-color);
+  border: 1px solid var(--input-border-color);
+  color: var(--input-text-color);
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: var(--list-background-color);
+  border: 1px solid var(--list-border-color);
+}
+
+.filters label {
+  display: block;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  button, input[type="text"], input[type="date"] {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .filters label {
+    display: block;
+    margin: 5px 0;
+  }
+}
